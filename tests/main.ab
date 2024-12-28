@@ -1,0 +1,7 @@
+import * from "github.com/lens0021/testchamber/main/asserts.ab"
+import * from "../main.ab"
+
+pub fun test_echo_stderr(): Null? {
+    echo_stderr("Hello")
+    assert_stdout("")?
+}
